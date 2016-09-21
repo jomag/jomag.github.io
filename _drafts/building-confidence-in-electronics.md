@@ -47,11 +47,11 @@ you get to that level, here's my next advice:
 ### 2. There's no sharp divide between digital and analog electronics
 
 You will soon find that even though you've focused on the digital solutions
-you've stumbled upon enough electronics problems that you will be able to read
-and understand 90% of most schemas. You will also be experienced enough to understand
-that the last 10% is nothing to really worry about in most cases.
+you've stumbled upon and somehow solved enough problems that you've built up
+enough knowledge to read and understand 90% of most schemas. You will also be
+experienced enough to understand that the last 10% is nothing to really worry
+about in most cases.
 
 Electronics are easy. It's the complexity of most schemas that make it hard: there's
-just too much going on. And without experience you will look upon them like a child
-with no means to filter the information flow for important stuff and stuff that can
-be ignored and what parts are related.
+just too much going on. And without experience you will look upon them
+with no means to filter the information.

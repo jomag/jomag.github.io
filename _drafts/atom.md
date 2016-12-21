@@ -71,6 +71,22 @@ configuration seems to work everywhere:
   'cmd-s': 'window:save-all'
 
 
+Python development
+------------------
+
+One of the shortcomings with Atom is that there is currently no up-to-date
+packages to handle virtualenvs. I use the package `atom-script` to run tests
+from inside Python, but by default they use the system Python and not the
+projects virtualenv.
+
+The workaround is to activate the virtualenv in a terminal and then
+start Atom from that same terminal:
+
+~~~
+% source .env/bin/activate
+% atom .
+~~~
+
 Pylint
 ------
 
@@ -92,6 +108,17 @@ pip install pylint
 pip install pep8
 ~~~
 
+Pylint does not seem to be aware of the active virtualenv (see above). This
+will cause warnings on import of packages that are not available systemwide
+among other things.
+
+I always create my virtual environments in a subdirectory of the project
+directory called `.env`. So what I've done is install pylint in the virtualenv
+and then change the executable path for `linter-pylint` to:
+
+~~~
+%p/.env/bin/pylint
+~~~
 
 Git
 ---
